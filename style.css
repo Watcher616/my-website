@@ -174,16 +174,37 @@ body{
 @media only screen and (max-width: 1000px) {
     body {
       padding: 0;
-      margin: 0;
+      height: 100%;
+      overflow: scroll;
     }
     .homepage-container{
+        position: relative;
+        overflow: scroll;
         width: 100vw;
+        min-height: 100%;
         border-radius: 0px;
-        padding: 0;
+        padding: 50px 0px 0px 0px;
         margin: 0;
     }
+    .info-container{
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background: #1A1B21;
+        text-align: center;
+        white-space: nowrap;
+        width: 100vw;
+        padding: 20px;
+        
+    }
+    .about-container{
+        margin-top: 100em !important;
+    }
+
     #profile{
-        margin-top: 20px;
+        margin-top: auto;
+        padding: 40px;
         width: 500px;
         height: 500px;
         border: 20px solid white;
@@ -248,10 +269,14 @@ body{
     flex-wrap: wrap;
 /* or 15px */
 }
+.interest-container{
+    padding-bottom: 5em;
+}
 .footer-container{
     width: 100vw;
     height: 12em;
     gap: 5em;
+    padding: 20px;
 }
 .footer-icon{
     width: 5em;
