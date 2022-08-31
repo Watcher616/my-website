@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 10px;
+    background: #23252C;
+    font-family: Inter, sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+/* THIS IS THE INFO SECTION*/
+ .info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#profile{
+    width: 317px;
+    /* border-radius: 10px 10px 0px 0px; */
+}
+
+#prof{
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 15px;
+    color: #F3BF99;
+    
+}
+#name{
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+   
+}
+#my-website{
+    margin-top: 9px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    color: #F5F5F5;
+}
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 317px;
+    margin-top:15px; 
+}
+.icon{
+    width: 20px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    padding: 9px 13px 9px 11px;
+    width: 115px;
+    height: 34px;
+/* shadow/sm */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+#email{
+    background: #FFFFFF;
+    color: #374151;
+     border: 1px solid #D1D5DB;
+}
+#linkedin:hover, #email:hover{
+     box-shadow: 0px 0px 10px #5093E2 ;
+    transition: all .2s ease-in-out
+}
+#linkedin{
+    background: #5093E2;
+    color: #FFFFFF;
+}
+
+/* THIS IS THE ABOUT SECTION  AND INTEREST SECTION*/
+
+.about-container, .interest-container{
+    width: 247px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 33px;
+    margin-left: 36px; 
+}
+#about-title, #about-p, #interest-title, #interest-p {
+    margin: 0;
+}
+#about-title, #interest-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+/* or 24px */
+    color: #F5F5F5;
+
+}
+
+#about-p, #interest-p{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+/* or 15px */
+    color: #DCDCDC;
+
+}
+.interest-container{
+    margin-bottom: auto;
+}
+
+
+/* THIS IS THE FOOTER SECTION */
+
+.footer-container{
+    background: hsl(240, 6%, 9%);
+    margin-top: auto;
+    width: 317px;
+     height: 64px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 24px;
+     position: relative;
+
+}
+.footer-icon{
+    width: 25px;
+    border-radius: 5px;
+    background:  #918E9B;
+}
+.footer-icon:hover{
+    background-color: white;
+}
+
+#twitter-icon{
+    padding: 2.5px;
+
+
+}
+
+
+.homepage-container{
+    background: #1A1B21;
+    width: 317px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .homepage-container{
+        width: 100vw;
+        border-radius: 0px;
+        padding: 0;
+        margin: 0;
+    }
+    #profile{
+        margin-top: 20px;
+        width: 500px;
+        height: 500px;
+        border: 20px solid white;
+        border-radius: 50%;
+    }
+
+    #name{
+        font-size: 5rem;
+        margin-bottom: 70px !important;
+        
+    }
+    #prof{
+        font-size: 3rem;
+    }
+    #my-website{
+        font-size: 2rem;
+    }
+
+    #name, #prof, #my-website{
+        margin-bottom: 30px;
+    }
+    .button-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .social{
+        height: 90px;
+        width: 400px;
+        font-size: 50px;
+        border-radius: 15px;
+    }
+    .icon{
+        width: 50px;
+    }
+
+    .about-container, .interest-container{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+        margin-top: 5em;
+        padding-right: 5em;
+        padding-left: 5em;
+    }
+
+    #about-title, #interest-title{
+        font-size: 80px;
+        line-height: 150%;
+    /* or 24px */
+    }
+    
+#about-p, #interest-p{
+    margin-left: 10px;
+    font-size: 45px;
+    line-height: 150%;
+    display: flex;
+    flex-wrap: wrap;
+/* or 15px */
+}
+.footer-container{
+    width: 100vw;
+    height: 12em;
+    gap: 5em;
+}
+.footer-icon{
+    width: 5em;
+}
+
+  }
